@@ -1,7 +1,5 @@
 # workingEnv
 
-# Introduction to cert-manager for Kubernetes
-
 ## We need a Kubernetes cluster
 
 Lets create a Kubernetes cluster to play with using [kind](https://kind.sigs.k8s.io/docs/user/quick-start/)
