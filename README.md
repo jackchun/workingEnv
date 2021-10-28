@@ -29,3 +29,13 @@ mv ./kubectl /usr/local/bin/kubectl
 NAME                    STATUS   ROLES    AGE   VERSION
 certmanager-control-plane   Ready    master   3m6s   v1.19.1
 ```
+
+
+```
+# install git
+apk add --no-cache git
+# clone
+git clone https://github.com/PacktPublishing/Kubernetes-and-Docker-The-Complete-Guide.git
+git clone https://github.com/istioinaction/book-source-code.git
+
+```
