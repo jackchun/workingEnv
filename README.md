@@ -35,4 +35,12 @@ apk add --no-cache git
 git clone https://github.com/PacktPublishing/Kubernetes-and-Docker-The-Complete-Guide.git
 git clone https://github.com/istioinaction/book-source-code.git
 
+# istio
+cd 
+curl -L https://istio.io/downloadIstio | sh -
+
+cd istio-1.11.4
+istioctl install --set profile=demo -y
+ 
+
 ```
