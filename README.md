@@ -40,7 +40,9 @@ cd
 curl -L https://istio.io/downloadIstio | sh -
 
 cd istio-1.11.4
+chmod +x ./bin/istioctl
+mv ./bin/istioctl /usr/local/bin/istioctl
+
 istioctl install --set profile=demo -y
- 
 
 ```
