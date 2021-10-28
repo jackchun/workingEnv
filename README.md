@@ -28,10 +28,7 @@ mv ./kubectl /usr/local/bin/kubectl
 /work # kubectl get nodes
 NAME                    STATUS   ROLES    AGE   VERSION
 certmanager-control-plane   Ready    master   3m6s   v1.19.1
-```
 
-
-```
 # install git
 apk add --no-cache git
 # clone
