@@ -46,3 +46,11 @@ mv ./bin/istioctl /usr/local/bin/istioctl
 istioctl install --set profile=demo -y
 
 ```
+
+
+
+## test ansible
+
+```
+docker run --rm -v ~/Documents/test-playbook:/data  cytopia/ansible ansible-playbook playbook.yml
+```
