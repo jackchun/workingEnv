@@ -16,7 +16,7 @@ kind create cluster --name certmanager --image kindest/node:v1.19.1
 # Get a container to work in
 
 # mount our kubeconfig file and source code
-docker run -it --rm -v ${HOME}/.kube:/root/.kube -v ${PWD}:/work -w /work --net host alpine sh
+docker run -it --rm -v ${HOME}/.kube:/root/.kube -v ${HOME}/Document/Github:/work -w /work --net host alpine sh
 
 # install kubectl
 apk add --no-cache curl
@@ -29,11 +29,20 @@ mv ./kubectl /usr/local/bin/kubectl
 NAME                    STATUS   ROLES    AGE   VERSION
 certmanager-control-plane   Ready    master   3m6s   v1.19.1
 
+alias k=kubectl
+source <(kubectl completion bash) # setup autocomplete in bash into the current shell, bash-completion package should be installed first.
+echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
+
+
 # install git
 apk add --no-cache git
-# clone
+
+
+# clone (not required when mounting Github)
 git clone https://github.com/PacktPublishing/Kubernetes-and-Docker-The-Complete-Guide.git
 git clone https://github.com/istioinaction/book-source-code.git
+
+
 
 # istio
 cd 
