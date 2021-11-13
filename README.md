@@ -30,9 +30,11 @@ NAME                    STATUS   ROLES    AGE   VERSION
 certmanager-control-plane   Ready    master   3m6s   v1.19.1
 
 alias k=kubectl
-source <(kubectl completion bash) # setup autocomplete in bash into the current shell, bash-completion package should be installed first.
-echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
 
+cd /tmp
+wget https://get.helm.sh/helm-v3.7.1-linux-arm64.tar.gz
+tar -zxf helm-v3.7.1-linux-arm64.tar.gz
+mv linux-arm64/helm /usr/local/bin/helm
 
 # install git
 apk add --no-cache git
