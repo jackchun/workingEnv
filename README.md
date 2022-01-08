@@ -50,7 +50,7 @@ git clone https://github.com/istioinaction/book-source-code.git
 cd 
 curl -L https://istio.io/downloadIstio | sh -
 
-cd istio-1.11.4
+cd istio-*
 chmod +x ./bin/istioctl
 mv ./bin/istioctl /usr/local/bin/istioctl
 
